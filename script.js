@@ -43,7 +43,7 @@ function toggleShortlist(id) {
   renderList();
 }
 
-fetch("http://127.0.0.1:5000/api/listings")
+fetch("https://internship-backend-14.onrender.com/api/listings")
   .then((res) => res.json())
   .then((data) => {
     designers = data.map((d) => ({ ...d, shortlisted: false }));
